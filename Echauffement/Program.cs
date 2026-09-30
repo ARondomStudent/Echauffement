@@ -1,4 +1,6 @@
-﻿namespace Echauffement;
+﻿using System.Globalization;
+
+namespace Echauffement;
 
 class Program
 {
@@ -30,10 +32,13 @@ class Program
 {           
             Console.WriteLine("Tu es mineur");
         }
-            
 
         // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
-        
+
+        Console.WriteLine("Combien d'euro as-tu?");
+        float nombreDEuro = Convert.ToSingle(Console.ReadLine(), CultureInfo.InvariantCulture);
+        Console.WriteLine(nombreDEuro);
+
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
         
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
