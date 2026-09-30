@@ -53,6 +53,26 @@ class Program
 
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
 
+        bool asseDArgent = false;
+        if (Convert.ToInt32(armeChoisie) == 1)
+        { 
+            asseDArgent = nombreDEuro >= 5;
+        }
+        if (Convert.ToInt32(armeChoisie) == 2)
+        {
+            asseDArgent = nombreDEuro >= 10;
+        }
+        if (Convert.ToInt32(armeChoisie) == 3)
+        {
+            asseDArgent = nombreDEuro >= 1899;
+        }
+        if (Convert.ToInt32(armeChoisie) == 4)
+        {
+            asseDArgent = nombreDEuro >= 139999;
+        }
+
+        Console.WriteLine(asseDArgent);
+
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
         // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
         // Dans tous les autres cas, informez l'utilisateur que l'action n'a pas été possible
