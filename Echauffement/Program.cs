@@ -71,7 +71,22 @@ class Program
             asseDArgent = nombreDEuro >= 139999;
         }
 
-        Console.WriteLine(asseDArgent);
+        if (asseDArgent = true)
+        {
+            if (age >= 18)
+            {
+                Console.WriteLine("Ton arme a bien été achetée");
+            }
+            else
+            {
+                Console.WriteLine("Tu n'as pas pu acheter l'arme car tu es mineur");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Tu n'as pas assé d'argent pour acheter cette arme");
+        }
+            
 
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
         // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
