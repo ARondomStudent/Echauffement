@@ -7,9 +7,9 @@ class Program
         /*
          * Consigne générale : faites un commit entre chaque étape !
          */
-        
+
         // Etape 1 : présentez-vous en écrivant votre prénom et votre jeu préféré
-        
+        Console.WriteLine("Eliott Roth Arc Raider");
         // Etape 2 : demandez à l'utilisateur son prénom et son âge
         
         // Etape 3 : affichez soit "Tu es majeur", soit "Tu es mineur" dépendant de l'âge fourni par l'utilisateur
