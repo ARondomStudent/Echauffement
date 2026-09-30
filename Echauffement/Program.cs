@@ -37,18 +37,23 @@ class Program
 
         Console.WriteLine("Combien d'euro as-tu?");
         float nombreDEuro = Convert.ToSingle(Console.ReadLine(), CultureInfo.InvariantCulture);
-        Console.WriteLine(nombreDEuro);
 
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
-        
+
+        Console.WriteLine("Magasin:");
+        Console.WriteLine("1. épée - 5 euro");
+        Console.WriteLine("2. dague - 10 euro");
+        Console.WriteLine("3. ak47 - 1899 euro");
+        Console.WriteLine("4. tank - 139 999 euro");
+
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
-        
+
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
-        
+
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
-            // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
-            // Dans tous les autres cas, informez l'utilisateur que l'action n'a pas été possible
-            
+        // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
+        // Dans tous les autres cas, informez l'utilisateur que l'action n'a pas été possible
+
         /*
          * Après votre dernier commit, faites un push de votre projet pour qu'il soit accessible sur github.com
          */
